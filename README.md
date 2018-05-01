@@ -1,37 +1,47 @@
-## Welcome to GitHub Pages
+# [Vue Paper Dashboard](https://cristijora.github.io/vue-paper-dashboard/) [![version][version-badge]][CHANGELOG] [![license][license-badge]][LICENSE]
 
-You can use the [editor on GitHub](https://github.com/arvin1408/farmori/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+> Admin dashboard based on paper dashboard UI template + vue-router
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+This project is a vue version of [Paper-dashboard](https://www.creative-tim.com/product/paper-dashboard)
+designed for vue js.The dashboard includes vue-router and vuex
 
-### Markdown
+Check the [Live Demo here](https://cristijora.github.io/vue-paper-dashboard).
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+![](http://i.imgur.com/3iC1hOs.gif)
 
-```markdown
-Syntax highlighted code block
+## Documentation
+Link to [Documentation](https://cristijora.github.io/vue-paper-dashboard-docs/#/)
 
-# Header 1
-## Header 2
-### Header 3
+## Build Setup
 
-- Bulleted
-- List
+### install dependencies
+`npm install`
+### serve with hot reload at localhost:8080
+`npm run dev`
+### build for production with minification
+`npm run build`
+### run unit tests
+`npm run unit`
+### run and watch unit tests
+`npm run unit:watch`
 
-1. Numbered
-2. List
+## Contribution guide
+* `npm install` or `yarn install`
+* If you use 3rd party libraries/components in more than 1 place make sure to define them globally for ease of use
+  Example
+  ```js
+  Object.defineProperty(Vue.prototype, '$Chartist', {
+    get() {
+      return Chartist;
+    }
+  });
+  ```
+* Please don't use jQuery or jQuery based plugins since there are many pure Vue alternatives
+* Write unit tests for your custom components. See fgInput.spec and paper-table.spec
 
-**Bold** and _Italic_ and `Code` text
+For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
 
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/arvin1408/farmori/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+[CHANGELOG]: ./CHANGELOG.md
+[LICENSE]: ./LICENSE.md
+[version-badge]: https://img.shields.io/badge/version-1.0.0-blue.svg
+[license-badge]: https://img.shields.io/badge/license-MIT-blue.svg
